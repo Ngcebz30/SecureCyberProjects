@@ -1,0 +1,89 @@
+<!--navbar-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navy-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="" class="navbar-brand"><i class="fa fa-shield" aria-hidden="true"></i>&nbsp; PS GENERATION</a>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="navy-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+</nav>
+<!--content-->
+<div class="container main text-center">
+  <span><i class="fa fa-lock logo-small" aria-hidden="true"></i></span>
+  <h1>PASSWORD GENERATOR.</h1>
+  <p class="infoText animated bounce" id="infotext">Clicking "Generate" will give you a new password, each time.</p>
+  <div class="row text-center passwords">
+    <div class="col-sm-4 col-xs-12 levels">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h2 class="passTitle">Weak</h2>
+        </div>
+        <div class="panel-body">
+          <p><strong>8</strong> Characters</p>
+          <p>Lowercase Letters</p>
+          <p>Uppercase Letters</p>
+        </div>
+        <div class="panel-footer">
+          <button onclick="password.weak()" type="button" id="generateBtn" class="btn btn-warning btn-lg">Generate</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12 levels">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h2 class="passTitle">Good</h2>
+        </div>
+        <div class="panel-body">
+          <p><strong>10</strong> Characters</p>
+          <p>Letters</p>
+          <p>Numbers</p>
+        </div>
+        <div class="panel-footer">
+          <button onclick="password.good()" type="button" id="generateBtn" class="btn btn-warning btn-lg">Generate</button>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 col-xs-12 levels">
+      <div class="panel panel-default text-center">
+        <div class="panel-heading">
+          <h2 class="passTitle">Strong</h2>
+        </div>
+        <div class="panel-body">
+          <p><strong>16</strong> Characters</p>
+          <p>Letters &amp; Numbers</p>
+          <p>Symbols</p>
+        </div>
+        <div class="panel-footer">
+
+          <button onclick="password.strong()" type="button" id="generateBtn" class="btn btn-warning btn-lg">Generate</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-sm-12 levels password">
+        <p class="reveal"><span id="reveal"> </span></p>
+        <div class="btn-group">
+          <button data-clipboard-action="copy" data-clipboard-target="#reveal" id="copy" type="button" class="btn btn-default copy" style="display: none;">Copy Password</button>
+          <!--clear text, hide buttons-->
+          <button onclick="password.clear()" type="button" id="clear" class="btn btn-warning clear" style="display: none;">Clear</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

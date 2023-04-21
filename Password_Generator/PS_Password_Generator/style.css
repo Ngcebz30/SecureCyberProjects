@@ -1,0 +1,99 @@
+body {
+  padding-top: 70px;
+  min-height: 600px;
+  min-width: 100%;
+  font-family: 'Roboto', sans-serif;
+  background-color: #F0F0F0;
+}
+
+h1 {
+  color: #4611AE;
+  background: -webkit-linear-gradient(#360C87, #6136B3);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 5em;
+}
+
+.btn:focus, .btn:active {
+  outline: none !important;
+}
+
+.btn {
+  border: none;
+  border-radius: 0;
+  margin: 15px 0;
+}
+
+.btn-primary {
+  border: 1px solid white;
+}
+
+.btn-group {
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+.infoText {
+  font-size: 18px;
+  margin-top: 15px;
+}
+.liner{
+  background-color: white;
+}
+.logo-small {
+  color: lightgray;
+  font-size: 60px;
+}
+
+.navbar {
+  background: #29086A;
+  border: none;
+}
+
+.navbar-inverse .navbar-brand {
+  color: #fff;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: #fff;
+}
+.panel {
+  border-radius:0 !important;
+  transition: box-shadow 0.5s;
+}
+.panel-heading {
+  padding: 25px;
+  background-color: #F0AD4E !important;
+  border-bottom: 1px solid transparent;
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;
+  border-bottom-left-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.panel:hover {
+      box-shadow: 5px 0px 40px rgba(0,0,0, .2);
+  }
+  .panel-footer{
+    background-color: white;
+  }
+
+.passwords {
+  margin: auto;
+  margin-top: 50px;
+}
+
+.passTitle {
+  color: white;
+}
+
+.reveal {
+  font-family: 'Source Code Pro', monospace;
+  font-size: 60px;
+  margin-top: 10px;
+  color: gray;
+}
+
+::selection {
+  background-color: transparent;
+}

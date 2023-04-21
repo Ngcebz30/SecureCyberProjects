@@ -1,0 +1,84 @@
+<section class="mainWrapper">
+
+	<header>
+		<h1 class="logo">SUPER SECRET <br> PASSWORD GENERATOR</h1>
+	</header>
+
+	<section class="main">
+		<form action="index.html" method="post" id="generator" class="">
+			<div class="wrapper">
+				
+				<div class="box password">
+					<label for="reult">Grab your password here</label>
+					<input type="text" id="reult" placeholder="Grab your password here" >
+					
+					<input type="submit" id="submit" value="GENERATE">
+				</div>
+
+				<div class="boxGroup">
+					<div class="box boxB animSettings even">
+						<input type="checkbox" name="lowercase" value="lowercase" id="lowercase" checked="checked" />
+						<label for="lowercase">Include lowercase charactors (abc)</label>
+					</div>
+
+					<div class="box boxB odd">
+						<input type="checkbox" name="uppercase" value="uppercase" id="uppercase" checked="checked" />
+						<label for="uppercase">Include uppercase charactors (ABC)</label>
+					</div>
+				</div>
+
+				<div class="boxGroup">
+					<div class="box boxB even">
+						<input type="checkbox" name="special" value="special" id="special" checked="checked" />
+						<label for="special">Include special charactors (!£$)</label>
+					</div>
+
+					<div class="box boxB odd">
+						<input type="checkbox" name="numbers" value="numbers" id="numbers" checked="checked" />
+						<label for="numbers">Include numbers (123)</label>
+					</div>
+				</div>
+
+				<div class="boxGroup last">
+					<div class="box boxB even counter">
+						<span class="minus">-</span>
+						<input type="text" id="char_count" value="12">
+						<span class="plus">+</span>
+				
+						<label for="char_count">Password length (6-30)</label>
+					</div>
+				</div>
+
+				<div class="boxGroupB">
+					<div class="box boxB strength">
+						<span id='test' class="perfect">Password strength test</span>
+					</div>
+				</div>
+
+				<div class="box last"><!-- empty and last in the list --></div>
+
+			</div>
+		</form>
+
+		<nav class="options">
+			<ul>
+				<li class="settings">
+					<a href="#settings">
+						<span>Settings</span>
+					</a>
+				</li>
+				<li class="recycle">
+					<a href="#recycle">
+						<span>Recycle</span>
+					</a>
+				</li>
+				<li class="strength">
+					<a href="#strength">
+						<span>Strengh test</span>
+					</a>
+				</li>
+			</ul>
+		</nav>
+	</section>
+
+</section>

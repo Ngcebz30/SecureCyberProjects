@@ -1,5 +1,4 @@
 
-
 # Welcome to SecureCyberProjects! 🔒
 
 I am excited to introduce you to a diverse range of cybersecurity projects that I have created for SecureCyberProjects. As a cybersecurity enthusiast, I am passionate about creating innovative solutions to keep people and businesses safe online.
